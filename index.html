@@ -5,20 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | QR code component</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<main class="container">
-    <div class="qr-card">
-        <img src="images/image-qr-code.png" alt="QR Code" class="qr-image">
-        <div class="text-content">
+
+ <! 
+ body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+ }
+ >
+
+<body class="d-flex 
+    align-items-center 
+    justify-content-center 
+    min-vh-100 
+    bg-light 
+    font-outfit">
+<main class="container
+    d-flex
+    justify-content-center">
+
+<! 
+.qr-card {
+    background-color: var(--white);
+    max-width: 320px;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+>
+
+    <div class="qr-card
+      card border-0 
+      shadow rounded-4 
+      p-3 
+      text-center" 
+    style="max-width: 320px;">
+
+<!
+.qr-image {
+    width: 100%;
+    border-radius: 10px;
+}
+>
+        <img src="images/image-qr-code.png" 
+            class="card-img-top rounded-3" 
+            alt="QR Code">
+
+<!
+.text-content {
+    padding: 24px 12px;
+}
+>
+       <div class="text-content
+              px-2">
+
+<! 
+h1 {
+    font-size: 22px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+>
             <h1> Improve your front-end skills by building projects</h1>
+
+<!
+p {
+    font-size: 15px;
+}
+>
             <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level!</p>
         </div>
     </div>
 </main>
+
+<! .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}>
+
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
